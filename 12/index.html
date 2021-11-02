@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<title>plantilla 12</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("1.jpg");
+  min-height: 90%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">Inicio</a>
+    <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+    <a href="#about" class="w3-bar-item w3-button">Acerca de</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACTO</a>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Abrimos de 10Am A 12Pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">La<br>Buena PIZZA</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>La<br>Buena PIZZA</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Déjame ver el menú</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">EL MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Saladas</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Arrancador</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Margarita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
+      <p class="w3-text-grey">Tomates frescos, mozzarella fresca, albahaca fresca</p>
+      <hr>
+
+      <h1><b>Queso</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+      <p class="w3-text-grey">Cuatro quesos (mozzarella, parmesano, pecorino, jarlsberg)</p>
+      <hr>
+
+      <h1><b>Pollo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+      <p class="w3-text-grey">Tomates frescos, mozzarella, pollo, cebollas</p>
+      <hr>
+
+      <h1><b>Piña en punto</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
+      <p class="w3-text-grey">Tomates frescos, mozzarella, piña fresca, tocino, albahaca fresca</p>
+      <hr>
+
+      <h1><b>Mexicana</b> <span class="w3-tag w3-red w3-round">Nueva!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
+      <p class="w3-text-grey">Tomates frescos, mozzarella, pepperoni picante, salchicha picante, ternera, pollo</p>
+      <hr>
+
+      <h1><b>Parma</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
+      <p class="w3-text-grey">Tomates frescos, mozzarella, parma, tocino, rúcula fresca</p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
+      <p class="w3-text-grey">Salsa especial, mozzarella, parmesano, carne molida</p>
+      <hr>
+
+      <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
+      <p class="w3-text-grey">Ravioles rellenos de queso</p>
+      <hr>
+
+      <h1><b>Spaghetti Clasico</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+      <p class="w3-text-grey">Tomates frescos, cebollas, carne molida</p>
+      <hr>
+
+      <h1><b>Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Salmón, camarones, langosta, ajo</p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Sopa del dia</b> <span class="w3-tag w3-grey w3-round">Estacional</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Pregunta al camarero</p>
+      <hr>
+
+      <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+      <p class="w3-text-grey">Pan con pesto, tomate, cebolla, ajo</p>
+      <hr>
+
+      <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+      <p class="w3-text-grey">Chapata a la plancha, mantequilla de ajo, cebolla</p>
+      <hr>
+
+      <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+      <p class="w3-text-grey">Tomates y mozzarella</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Acerca de</h1>
+    <p>The Pizza Pizza fue fundada por Mr. Blabla Italiano in Esfet, consectetur adipiscing elit, sed tempor y vitalidad, para que el trabajo y el dolor, algunas cosas importantes que hacer eiusmod. A lo largo de los años, vendré, quien no sacará alícuotas de ella la ventaja del ejercicio, de modo que los esfuerzos de estímulo si el distrito escolar y la longevidad.</p>
+    <p><strong>¿Eel Chef?</strong> Sr. Saul.E<img src="s.png" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>Estamos orgullosos de nuestros interiores.</p>
+    <img src="2.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Horario de apertura</b></h1>
+
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Lunes y Jueves CERRADO</p>
+        <p>Martes 10.00 - 24.00</p>
+        <p>Miercoles 10:00 - 24:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Viernes 10:00 - 12:00</p>
+        <p>Sabado 10:00 - 23:00</p>
+        <p>Domingo Cerrado</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contacto</h1>
+    <p>Encuéntrenos en alguna dirección en algún lugar o llámenos al 05050515-122330</p>
+    <p><span class="w3-tag">Mira!</span> Ofrecemos cartera de servicio completo para cualquier evento, grande o pequeño. Entendemos sus necesidades y nos encargaremos de la comida para satisfacer los criterios más importantes de todos, tanto en apariencia como en sabor.</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> una mesa, pregunte por el especial de hoy o simplemente envíenos un mensaje:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nombre" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Cuantas personas" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Hora y Fecha" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensaje \ Requisitos especiales" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">Enviar Mensaje</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Creado Por <a href="#" title="W3.CSS" target="_blank" class="w3-hover-text-green">Saul.E</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

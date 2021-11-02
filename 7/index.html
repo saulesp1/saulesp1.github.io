@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<title>Plantilla 7</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>FER BLOGLIFE</b></h1>
+    <h6>Bienvenido al blog de <span class="w3-tag">El mundo de Fer</span></h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="1.jpg" alt="Fashion Blog" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-white">Fer</h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>BLOG DE MODA</b></h1>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUSCRIBIR</button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>ENCABEZADO DEL TÍTULO</h3>
+          <h5>Descripción del Título, <span class="w3-opacity">Mayo 2, 2016</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="f1.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16">
+          <p><strong>¡Más sombreros!</strong> Estoy loco por los sombreros estos días. Algún texto sobre este video. Moda moda y más que urna adipiscing semper, nisl levadura, la de la vida, el valle, los grandes protagonistas. Pero ahora que lorem Performance tiene un montón de bienes raíces. ferry en vivo
+             para hasta ahora el más grande, y el tortor ac erat id cursus at. Pero cualquier Phasellus ultricies mi corps no congue. Sedtellus presenta a los desarrolladores como pareja. Pero la vida de los justos, visualmente, la puerta del lecho de la vida, ultricies congue gravida diam lorem fringilla.</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Me Gusta</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Respuestas  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="s.png" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Joorge <span class="w3-opacity w3-medium">May 3, 2019, 6:32 PM</span></h4>
+                <p>¡Gran publicación de blog! Siguiendo</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>ENCABEZADO DEL TÍTULO</h3>
+          <h5>Descripción del Título, <span class="w3-opacity">Abril 23, 2016</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="f2.jpg" alt="Men in Hats" style="width:100%" class="w3-padding-16">
+          <p><strong>¡Sombreros!</strong> ¡La tendencia de este verano son los sombreros para hombre!</p>
+          <p>Algún texto sobre este video. Moda moda y más que urna adipiscing semper, nisl levadura, la de la vida, el valle, los grandes protagonistas. Pero ahora que lorem Performance tiene un montón de bienes raíces. Vivamus porttitor para hasta ahora el más grande, y el ac erat id tortor cursus at. Nam Nullam
+             , No tengo ninguna corper congue. Sedtellus presenta a los desarrolladores como pareja. Pero la vida de los justos, visualmente, la puerta del lecho de la vida, ultricies congue gravida diam lorem fringilla.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Me Gusta</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Respuestas  </b> <span class="w3-tag w3-white">2</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="s.png" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Javier X <span class="w3-opacity w3-medium">Abril 26, 2015, 10:52 PM</span></h4>
+                <p>¡Amo tu página de blog! ¡Simplemente lo mejor! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor y vitalidad, de modo que el trabajo y el dolor, algunas cosas importantes que hacer eiusmod.</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="f.png" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Angela <span class="w3-opacity w3-medium">Abril 23, 2015, 9:12 PM</span></h4>
+                <p>Amo los Sombreros!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>ENCABEZADO DEL TÍTULO</h3>
+          <h5>Descripción del Título, <span class="w3-opacity">Abril 7, 2016</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="f3.jpg" alt="Runway" style="width:100%" class="w3-padding-16">
+          <p><strong>No te pierdas!</strong> ¡La pasarela en la ciudad de Nueva York este fin de semana será legendaria!</p>
+          <p>Algún texto sobre este video. Moda moda y más que urna adipiscing semper, nisl levadura, la de la vida, el valle, los grandes protagonistas. Pero ahora que lorem Performance tiene un montón de bienes raíces. Vivamus porttitor para hasta ahora el más grande, y el ac erat id tortor cursus at. Nam Nullam
+             , No tengo ninguna corper congue. Sedtellus presenta a los desarrolladores como pareja. Pero la vida de los justos, visualmente, la puerta del lecho de la vida, ultricies congue gravida diam lorem fringilla.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Me Gusta</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Respuestas  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="f.png" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Jane <span class="w3-opacity w3-medium">Abril 10, 2015, 7:22 PM</span></h4>
+                <p>¡Fue un gran desfile! Gracias por todo.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="s.png" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>John <span class="w3-opacity w3-medium">Abril 8, 2015, 10:32 PM</span></h4>
+                <p>¡Mantener el buen trabajo! ¡¡Te estoy animando !! Zanahorias Lorem ipsum, desarrollador de pregrado mejorado, pero ocasionalmente atraen tiempo y vitalidad.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="f.png" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Anja <span class="w3-opacity w3-medium">Abril 7, 2015, 9:12 PM</span></h4>
+                <p>¡No puedo esperar a que comience la pista!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="f.png" alt="Jane" style="width:100%" class="w3-grayscale">
+        <div class="w3-container w3-black">
+          <h4>Mi Nombre</h4>
+          <p>Solo yo, yo y yo, explorando el universo del desconocimiento. Tengo un corazón de amor y un interés por el blog de lorem ipsum y mauris neque quam. Quiero compartir mi mundo contigo.</p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Entradas populares</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Javier</span>
+            <br>
+            <span>Insertar Texto</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="bandmember.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">SUeteres</span>
+            <br>
+            <span>Insertar Texto</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Trabajo</span>
+            <br>
+            <span>Insertar Texto</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
+            <span class="w3-large">Moda</span>
+            <br>
+            <span>Algo escrito aqui</span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+      <!-- Advertising -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Anunciar</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <div class="w3-container w3-display-container w3-light-grey w3-section" style="height:200px">
+            <span class="w3-display-middle">Su anuncio aquí</span>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Tags</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">Moda</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Pachuca</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">CDMX</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sombreros</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Agua</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Suetres</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">tierra</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Accessorios</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Nuevo</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ropa</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Compras</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Jeans</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Tienda</span>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Inspiration -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Inspiración</h4>
+        </div>
+        <div class="w3-row-padding w3-white">
+          <div class="w3-col s6">
+            <p><img src="2.jpg" alt="Jeans" style="width:100%"></p>
+            <p><img src="3.jpg" alt="Jeans" style="width:100%"></p>
+          </div>
+          <div class="w3-col s6">
+            <p><img src="4.jpg" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
+            <p><img src="5.jpg" alt="Jeans" style="width:100%"></p>
+         </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Sigueme</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Subscribete</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Ingrese su correo electrónico a continuación y reciba notificaciones sobre las últimas publicaciones del blog.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Correo" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribir</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBIR</h2>
+      <p>Únase a mi lista de correo para recibir actualizaciones sobre las últimas publicaciones del blog y otras cosas.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Correo"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribir</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>Subir</a>
+  <p>Creado por <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Saul.E</a></p>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Gustado";
+}
+</script>
+
+</body>
+</html>
