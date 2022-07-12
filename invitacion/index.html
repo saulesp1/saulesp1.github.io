@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/w3.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Invitacion</title>
+    <style>
+    @font-face {font-family:f1;src: url(fonts/always.ttf);}
+    @font-face {font-family:ange;src: url(fonts/angelica.otf);}
+    @font-face {font-family:vale;src: url(fonts/vale.ttf);}
+    @font-face {font-family:f4;src: url(fonts/wed.otf);}
+    @font-face {font-family:ana;src: url(fonts/ana.ttf);}
+
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+    body, html {
+      height: 100%;
+      color: #777;
+      line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .bgimg-1 {
+      background-image: url('img/fer1.jpg');
+      height: 500px;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+      background-image: url("img/anilloo.png");
+      min-height: 400px;
+    }
+
+    /* Third image (Contact) */
+    /* .bgimg-3 {
+      background-image: url("/w3images/parallax3.jpg");
+      min-height: 400px;
+    } */
+
+    .w3-wide {letter-spacing: 5px;}
+    .w3-hover-opacity {cursor: pointer;}
+    .w3-hide{display: none;}
+
+    #cuenta {
+    	display: flex;
+    	justify-content: center;
+    }
+
+    .simply-section {
+      font-family: vale;
+      background:#fff;
+    	border-radius: 7.5px;
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+      margin: 0 4px;
+
+    }
+
+    .simply-amount {
+    	display: block;
+    	font-size: 25px;
+    }
+
+    .simply-word {
+    	font-size: 20px;
+      margin:7px;
+    }
+    @keyframes latido {
+      0% { width:40%;border:10px solid gray; }
+      100% { width:60%;border:10px solid transparent; }
+    }
+    .animaaa {
+  	animation: latido 2s infinite;
+    border-radius:100%;
+    padding-top:3%;padding-bottom:3%
+    }
+    #body{background-image: url('img/fondoI.png');
+    background-size: cover;background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;}
+    </style>
+  </head>
+  <body id="body">
+
+    <div class="w3-center" id="inicio">
+      <img src="img/sob1.png" id="mov2" style="height:100%;position:fixed;right:0;">
+      <img src="img/sob2.png" id="mov1" style="height:100%;position:fixed;left:0;">
+      <img src="img/sello.png" class="animaaa w3-display-middle" style="width:50%;"
+      onclick="document.getElementById('sello').style.display='none';mover1();mover2();" id="sello">
+    </div>
+
+    <div id="cuerpo" class="w3-animate-opacity"  style="display:none;">
+      <img src="img/ramo.png" style="height:100%;position:fixed;left:-24%;">
+      <img src="img/ramo2.png" style="height:100%;position:fixed;right:-24%;">
+        <!-- Navbar -->
+        <div class="w3-top">
+          <div class="w3-hide" id="barra">
+            <div class="" style="padding-top:10px;text-align:center;padding-bottom:10px">
+              <span class="w3-text-gray" style="font-family:vale;font-size:35px;">Fer & Saul</span><br>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagen 1 -->
+        <div class="bgimg-1 w3-display-container w3-opacity-min" style="font-family:vale;" id="home">
+          <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-wide w3-animate-opacity"style="font-size:50px;color:white;">&nbspFer</span><br>
+            <span class="w3-center w3-padding-large w3-wide w3-animate-opacity"style="font-size:50px;color:white;">&nbsp&nbsp&&nbsp&nbsp</span><br>
+            <span class="w3-center w3-padding-large w3-wide w3-animate-opacity"style="font-size:50px;color:white;">Saul</span>
+          </div>
+        </div>
+
+        <!-- Contenedor -->
+        <div class="w3-content w3-container w3-padding-64 w3-center" id="about">
+            <h2 class="w3-center"style="font-family:vale;">Te invitamos a nuestra boda</h2>
+            <img src="img/separadorn.png" style="width:70%;position:relative;top:-20px;">
+        </div>
+
+        <!-- tiempo -->
+        <div class="bgimg-2 w3-display-container w3-opacity-min">
+          <div class=" w3-center" style="padding-left:5%;padding-right:5%;padding-top:75px;">
+            <h1 class="w3-text-white" style="font-family:vale;padding-left:5%;padding-right:5%;" >Sábado 10 de Septiembre 2022</h1><br>
+            <div class="w3-text-gray w3-opacity-min" id="cuenta"></div>
+            <script src="js/simplyCountdown.min.js"></script>
+            <script src="js/countdown.js"></script>
+          </div>
+        </div>
+
+        <div class="w3-row w3-center" style="background-color:#DABE6F;color:white;padding-top:50px;padding-bottom:50px;">
+          <h2 style="font-family:vale;">¡Nos gustaría mucho contar con tu presencia!</h2>
+        </div>
+
+        <!-- Ubicación -->
+        <div class="w3-content w3-container w3-padding-64 w3-center" id="portfolio">
+          <h1 class="w3-center" style="font-family:vale;margin-top:65px;">Ubicación</h1>
+          <img src="img/separador3.png" style="width:70%;position:relative;top:-25px;margin-bottom:40px;"><br>
+          <img src="img/salon.jpg" style="border-radius:50%;width:70%;margin-bottom:40px;">
+          <h3 style="font-family:vale;padding-left:10%;padding-right:10%;">C. 18 de Agosto 102, Matilde, 42119 Pachuca de Soto, Hgo.</h3><br>
+          <div style="border-radius:10px;padding:15px;font-size:30px;background-color:#DABE6F;color:white;margin-left:15%;margin-right:15%;margin-bottom:80px;"
+            onclick="location.href='https://maps.app.goo.gl/Gz4dTbRUgk5meV1L8';" class="w3-button" id="btn_map">
+            <img src="img/ub.png" width="30" style="position:relative;top:-4px;">
+             Ver mapa
+          </div>
+          <div style="padding-left:5%;padding-right:5%;">
+            <img src="img/sepsen2.png" style="width:70%;position:relative;top:15px;">
+            <h2 style="font-family:vale;">¡Por la seguridad de todos!</h2>
+            <div class="w3-center">
+              <img src="img/sepsen.png" style="width:70%;position:relative;top:-25px;margin-bottom:10px;">
+            </div>
+            <ul style="text-align:justify;padding-left:10%;padding-right:10%;font-family:ana;">
+              <li>No te confíes, porta tu cubrebocas todo el tiempo posible.</li>
+              <li>Permite revisar tu temperatura en la entrada.</li>
+              <li>Lava tus manos.</li>
+              <li>Si sientes algún síntoma previo al evento, háznoslo saber, nosotros comprenderemos tu ausencia.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contenedor -->
+        <div class="w3-row w3-center" style="background-color:#DABE6F;color:white;padding-top:50px;padding-bottom:50px;">
+          <h2 style="font-family:vale;">¡Que nos acompañes es lo más importante!</h2>
+        </div>
+
+        <!-- Third Parallax Image with Portfolio Text -->
+        <!-- <div class="bgimg-3 w3-display-container w3-opacity-min">
+          <div class="w3-display-middle">
+             <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+          </div>
+        </div> -->
+
+        <!-- Container (Contact Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="contact">
+          <h1  style="font-family:vale;" class="w3-center">¡Confirma tu Asistencia!</h1>
+          <div class="w3-center">
+            <img src="img/separador3.png" style="width:70%;position:relative;top:-25px;margin-bottom:20px;">
+            <h2 style="font-family:vale;" class="w3-center"><i class="fa fa-envelope"></i> Invitación para <b id="persona"></b>.</h2>
+            <h2 style="font-family:vale;" class="w3-center"><b id="no"></b></h2>
+            <h2 style="font-family:vale;" class="w3-center"><b id="niños"></b></h2><br>
+            <h3 style="font-family:ana;" class="w3-container">Para nosotros es importante confirmar tu asistencia, y tu puntualidad</h3>
+            <input type="hidden" id="obb"><br>
+          </div>
+          <div class="w3-row w3-container">
+            <div class="w3-col m8 w3-panel">
+
+                <div id="panelconfi">
+
+                  <div class="w3-center">
+                    <button class="w3-button w3-section" style="font-family:ana;border-radius:5px;margin-top:20px;background-color:#DABE6F;color:white;" onclick="coon('Asistiré');">
+                      <i class="fa fa-check"></i> Confirmar
+                    </button><br>
+                    <button class="w3-button w3-dark-gray w3-section" style="font-family:ana;border-radius:5px;margin-top:20px;" onclick="coon('No ire');">
+                      <i class="fa fa-close"></i> No asistiré
+                    </button>
+                  </div>
+
+                </div>
+                <div id="confi" class="w3-center"></div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="w3-center w3-dark-gray w3-padding-64 w3-opacity ">
+          <a href="#home" class="w3-button w3-light-grey" style="font-family:ana;border-radius:5px;"><i class="fa fa-arrow-up w3-margin-right"></i>Subir</a>
+          <div class="w3-xlarge w3-section">
+            <a href="https://wa.me/5217713146228?text=Hola, me interesan las invitaciones"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>&nbsp&nbsp&nbsp
+            <a href="https://www.facebook.com/saul.esparza.37"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>&nbsp&nbsp&nbsp
+            <a href="https://t.me/SaulEsp"><i class="fa fa-telegram w3-hover-opacity"></i></a>
+          </div>
+          <p style="font-family:ana;">Creado por&nbsp&nbsp&nbsp<b>Saul E.</b></p>
+        </footer>
+
+        <script>
+        // Modal Image Gallery
+
+        // Change style of navbar on scroll
+        window.onscroll = function() {myFunction()};
+        function myFunction() {
+            var navbar = document.getElementById("barra");
+            if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace("w3-bar w3-card w3-animate-top w3-white", "w3-hide");
+            }
+        }
+
+        </script>
+
+
+    </div>
+
+  </body>
+</html>
+
+<script>
+  function mover1() {
+    var elem = document.getElementById("mov1");
+    var width = 0;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width == -100) {
+        clearInterval(id);
+      } else {
+        width--;
+        elem.style.left = width + '%';
+      }
+    }
+  }
+  function mover2() {
+    var elem = document.getElementById("mov2");
+    var width = 24;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        document.getElementById('inicio').style.display='none';
+        document.getElementById('cuerpo').style.display='inline';
+        document.getElementById('body').style.background='white';
+      } else {
+        width++;
+        elem.style.left = width + '%';
+      }
+    }
+  }
+
+  function get(val){
+    var ulrpar = new URLSearchParams(window.location.search);
+    return ulrpar.get(val);
+  }
+  if (get('no') > '1') {
+    var pase = get('no') + " adultos";
+  }
+  if (get('no') == '1') {
+    var pase = get('no') + " adulto";
+  }
+
+  if (get('non') > '1') {
+    var niños = get('non') + " infantiles";
+  }
+  else {var niños = "";}
+  if (get('non') == '1') {
+    var niños = get('non') + " infantil";
+  }
+  document.getElementById('persona').innerHTML=get('nombre');
+  document.getElementById('no').innerHTML=pase;
+  document.getElementById('niños').innerHTML=niños;
+
+  document.getElementById('obb').value=get('nombre')+"&edo=";
+
+
+  function coon(edoo) {
+    var resp=document.getElementById('obb').value;
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+      document.getElementById("confi").innerHTML =
+      this.responseText;
+    }
+    xhttp.open("GET", "https://invitacionferysaul.000webhostapp.com/confirmar.php?nombre="+resp+edoo);
+    xhttp.send();
+    document.getElementById('panelconfi').style.display="none";
+    document.getElementById("confi").innerHTML ="<h1 style='font-family:ana;'>Gracias!</h1>";
+  }
+
+
+</script>
